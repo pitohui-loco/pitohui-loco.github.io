@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start; /* ←上寄せ */
+    padding-top:60px; /* ←ここで位置調整 */
+    background:#050505;
+    font-family:monospace;
+}
+
+.window{
+    width:900px;
+    height:600px;
+    background:#000;
+    border:2px solid #55ff55;
+    box-shadow: 0 0 20px #55ff55;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.window-header{
+    display:flex;
+    align-items:center;
+    white-space:nowrap;   /* ←改行防止 */
+
+    position:relative;
+
+    background:#0f0f0f;
+    color:#55ff55;
+    padding:15px;
+    border-bottom:1px solid #55ff55;
+    font-size:20px;
+    letter-spacing:2px;
+}
+.window-header span{
+    flex-shrink:0;  /* ←文字が潰れないように固定 */
+}
+
+
+#log{
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+    color:#55ff55;
+    text-shadow:0 0 5px #55ff55;
+    line-height:1.7;
+    font-size:18px;
+    white-space:pre-wrap;
+}
+
+#log span{
+    display:inline;
+}
+
+.button-area{
+    padding:20px;
+    border-top:1px solid #55ff55;
+    display:flex;
+    justify-content:center;
+}
+
+button{
+    background:#000;
+    color:#55ff55;
+    border:1px solid #55ff55;
+    padding:12px 25px;
+    font-size:18px;
+    cursor:pointer;
+    font-family:monospace;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#55ff55;
+    color:#000;
+    box-shadow:0 0 15px #55ff55;
+}
